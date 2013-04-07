@@ -1,4 +1,7 @@
-//Class to use the touche shield.
+// Released under Creative Commons License 
+// Developed by Gabriele Gambotto with love
+
+//Class used to handle arduino datas.
 class Touche{
   
  /**********************************************************
@@ -84,13 +87,7 @@ class Touche{
     applyMovingAverageFilter();
     return filteredValues;
   }
-  /*
-  //Get the global maximum as a vector (value, position)
-  GlobalMaxFeature getGlobalMaximum(){
-    findGlobalMax();
-    return globalMax;
-  }
-  */
+
   //Set the gesture detector to use. The detector will create its feature.
   void setDetector(GestureDetector detector){
     gestureDetector = detector;

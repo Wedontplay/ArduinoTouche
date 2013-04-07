@@ -1,3 +1,7 @@
+// Released under Creative Commons License 
+// Developed by Gabriele Gambotto with love
+
+//Basic User Interface
 class UserInterface{
     
   

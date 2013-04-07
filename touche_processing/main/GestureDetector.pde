@@ -1,3 +1,6 @@
+// Released under Creative Commons License 
+// Developed by Gabriele Gambotto with love
+
 //Abstract feature detector class.
 //Concrete detector must extend from that class 
 abstract class GestureDetector{

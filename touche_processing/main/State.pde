@@ -1,3 +1,6 @@
+// Released under Creative Commons License 
+// Developed by Gabriele Gambotto with love
+
 //Root class for state, every states must extend this class
 abstract class State{
 

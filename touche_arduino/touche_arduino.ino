@@ -1,3 +1,7 @@
+//Cleaned Version of the original sketch you can foud here: 
+//https://github.com/Illutron/AdvancedTouchSensing
+
+
 
 // Touche
 #define SET(x,y) (x |=(1<<y))				//-Bit set/clear macros

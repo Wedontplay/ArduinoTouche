@@ -1,3 +1,7 @@
+// Released under Creative Commons License 
+// Developed by Gabriele Gambotto with love
+
+
 import processing.serial.*;
 
 // The serial port
@@ -40,14 +44,15 @@ void draw () {
   
   background(0);
   stroke(255);
-  
-  ui.drawGraph(points); 
-  
+
+  //Draw the user interface
+  ui.drawGraph(points);   
   if(handshake){
     ui.drawDetectorPanel(touche.getFeature().position, touche.getFeature().value, currentState.name);   
   }  
   
 }
+
 
 void serialEvent (Serial myPort) {
   

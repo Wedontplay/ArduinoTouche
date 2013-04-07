@@ -1,3 +1,7 @@
+// Released under Creative Commons License 
+// Developed by Gabriele Gambotto with love
+
+//Concrete Feature
 class GlobalMaxFeature implements FeatureInterface {
 
   int position;

@@ -1,3 +1,7 @@
+// Released under Creative Commons License 
+// Developed by Gabriele Gambotto with love
+
+//Concrete State
 class GlobalMaxState extends State{
 
   
