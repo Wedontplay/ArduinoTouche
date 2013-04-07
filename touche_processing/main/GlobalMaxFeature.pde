@@ -3,6 +3,10 @@ class GlobalMaxFeature implements FeatureInterface {
   int position;
   float value;
 
+  /**********************************************************
+  *********************   CONSTRUCTORS  *********************
+  **********************************************************/
+
   GlobalMaxFeature() {
     position = 0;
     value = 0;
@@ -12,7 +16,6 @@ class GlobalMaxFeature implements FeatureInterface {
   void detect(float[] sensorValues) {
 
     //find the global maximum and its position
-    //Zeroing the value
     value = 0;
 
     for (int i = 0; i < sensorValues.length; i++) {
@@ -25,6 +28,7 @@ class GlobalMaxFeature implements FeatureInterface {
     }
     
   }
+  
   
 }
 

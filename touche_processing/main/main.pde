@@ -17,7 +17,7 @@ void setup () {
   size(800, 600);        
   
   // instantiate the objects
-  touche = new Touche(400, new GlobalMaxDetector(3));
+  touche = new Touche(400, new GlobalMaxDetector(9));
   points = new float[400];
   ui = new UserInterface();
   // List all the available serial ports
@@ -72,12 +72,36 @@ void keyPressed() {
       break;
     
     case 49:
-      touche.setState(1, "Approaching", points); 
+      touche.setState(1, "Approaching Far", points); 
       break;  
 
     case 50:
-      touche.setState(2, "Contact", points); 
+      touche.setState(2, "Approaching Near", points); 
       break;  
+
+    case 51:
+      touche.setState(3, "One Finger", points); 
+      break;  
+      
+    case 52:
+      touche.setState(4, "Two Finger", points); 
+      break;  
+      
+    case 53:
+      touche.setState(5, "Three Finger", points); 
+      break;        
+      
+    case 54:
+      touche.setState(6, "Four Finger", points); 
+      break;              
+      
+    case 55:
+      touche.setState(7, "Five Finger", points); 
+      break;                    
+      
+    case 56:
+      touche.setState(8, "Full Hand", points); 
+      break;                    
   }
   
 }

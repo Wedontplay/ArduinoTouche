@@ -45,13 +45,13 @@ class UserInterface{
     text("Max Value: " + maxVal, 450, 140);
   
     textSize(22);
-    text("Press keys from 0 to 5 to detect the gestures", 450, 200, 300, 100);
+    text("Press keys from 0 to 8 to detect the gestures", 450, 200, 300, 100);
     
     textSize(28);
     text("Detected Gesture:", 450, 350);
     textSize(50);
     fill(255,0,0);
-    text( gesture, 450, 400, 350, 100);
+    text( gesture, 450, 400, 350, 200);
   }
     
 }

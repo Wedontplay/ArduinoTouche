@@ -1,22 +1,34 @@
-class State{
+//Root class for state, every states must extend this class
+abstract class State{
 
-  String name = "";
-  GlobalMaxFeature feature;
-  boolean initialized;
-  
-  State (){
-    
-    this.name = "undefined";
-    this.feature = new GlobalMaxFeature();
-    initialized = false;
-  
-  }
-  
-  State (String name, GlobalMaxFeature feature){
-  
+  /**********************************************************
+  ***********************  VARIABLES  ***********************
+  **********************************************************/
+  protected String name;
+  protected FeatureInterface feature;
+  protected boolean initialized;
+ 
+ 
+  /**********************************************************
+  ********************  GETTER E SETTER  ********************
+  **********************************************************/
+  abstract FeatureInterface getFeature();
+
+  void setName(String name){
     this.name = name;
-    this.feature = feature;
-    initialized = false;
-  
   }
+  
+  String getName(){
+    return name;
+  }
+  
+  void setInitialized(boolean val){
+    initialized = val;
+  } 
+  
+  boolean getInitialized(){
+    return initialized;
+  } 
+
+  
 }
