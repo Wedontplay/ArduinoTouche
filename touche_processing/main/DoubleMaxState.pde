@@ -2,22 +2,22 @@
 // Developed by Gabriele Gambotto with love
 
 //Concrete State
-class GlobalMaxState extends State{
+class DoubleMaxState extends State{
 
   
   /**********************************************************
   *********************   CONSTRUCTORS  *********************
   **********************************************************/
 
-  GlobalMaxState (){
+  DoubleMaxState (){
     
     this.name = "undefined";
-    this.feature = new GlobalMaxFeature();
+    this.feature = new DoubleMaxFeature();
     initialized = false;
   
   }
   
-  GlobalMaxState (String name, GlobalMaxFeature feature){
+  DoubleMaxState (String name, DoubleMaxFeature feature){
   
     this.name = name;
     this.feature = feature;
@@ -26,8 +26,7 @@ class GlobalMaxState extends State{
   }
   
   
-  GlobalMaxFeature getFeature(){
-  return (GlobalMaxFeature)feature;
+  DoubleMaxFeature getFeature(){
+  return (DoubleMaxFeature)feature;
   }
-  
 }
